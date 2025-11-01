@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/profile2.png" />
+    
+    <!-- SINGLE VIEWPORT TAG - CRITICAL FIX -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Salahuddin Mehsud - Full Stack Developer Portfolio" />
+    <title>Salahuddin</title>
+
+    <!-- Force scaling consistency -->
+    <style>
+      /* CRITICAL: Force exact scaling */
+      body, html {
+        zoom: 1 !important;
+        -moz-transform: scale(1) !important;
+        -webkit-text-size-adjust: 100% !important;
+        text-size-adjust: 100% !important;
+        transform: scale(1) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Force viewport on load -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Force viewport
+        const viewport = document.querySelector('meta[name="viewport"]');
+        if (viewport) {
+          viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+        }
+        
+        // Force no scaling
+        document.body.style.zoom = "1";
+        document.documentElement.style.zoom = "1";
+        
+        // Prevent zoom gestures
+        document.addEventListener('gesturestart', function (e) {
+          e.preventDefault();
+        });
+        document.addEventListener('gesturechange', function (e) {
+          e.preventDefault();
+        });
+        document.addEventListener('gestureend', function (e) {
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
