@@ -200,6 +200,14 @@ const Education = () => {
                               alt="Certificate"
                               className="w-full h-auto rounded-lg"
                             />
+                           <a
+                            href={edu.certEmail}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 bg-[#8245ec] text-white py-3 px-4 rounded-lg font-medium text-center hover:bg-[#9245ec] transition-all duration-300 text-sm"
+                          >
+                            View Certificate
+                          </a>
                           </div>
                         </div>
                       )}

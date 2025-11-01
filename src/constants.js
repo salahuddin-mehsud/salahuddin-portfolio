@@ -45,6 +45,7 @@ import certImg from './assets/certificate.png'
 import gaslessVideo from './assets/project_videos/gasless_voting.mp4';
 import jobPortalVideo from './assets/project_videos/job_portal.mp4';
 import ecommerceVideo from './assets/project_videos/ecommerce_store.mp4';
+import certEmail from './assets/email.pdf';
 
 export const SkillsInfo = [
   {
@@ -164,7 +165,8 @@ export const SkillsInfo = [
       school: "Alchemy University",
       grade: "95% / Duration 15+ hr",
       desc: "Alchemy EVM Chain Developer program, covering the fundamentals and advanced concepts of Ethereum Virtual Machine (EVM) development. Gained hands-on experience with smart contracts, Solidity programming, decentralized applications (dApps), blockchain architecture, gas optimization, and on-chain debugging using Alchemy tools. Demonstrated proficiency in building, testing, and deploying secure and scalable smart contracts on EVM-compatible networks.",
-      certImg: certImg
+      certImg: certImg,
+      certEmail: certEmail
     },
   ];
   
