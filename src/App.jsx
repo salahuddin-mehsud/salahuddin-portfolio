@@ -80,7 +80,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="gradient-bg-main min-h-screen relative overflow-hidden">
+    <div className="gradient-bg-main min-h-screen relative"> {/* REMOVED overflow-hidden */}
       <div className="particles-container fixed inset-0 z-0 pointer-events-none"></div>
       <div className="grid-bg"></div>
       

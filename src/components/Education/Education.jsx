@@ -23,8 +23,6 @@ const Education = () => {
     return () => observer.disconnect();
   }, []);
 
-  
-
   return (
     <section
       ref={sectionRef}
@@ -32,12 +30,12 @@ const Education = () => {
       className="py-16 lg:py-20 relative overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-6">
-        {/* Section Header - Classic */}
+        {/* Section Header */}
         <div className={`text-center mb-12 transition-all duration-500 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Education & Certifications
+            Certifications
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#8245ec] to-[#00f5ff] mx-auto mb-4"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -47,7 +45,7 @@ const Education = () => {
 
         {/* Two-Column Layout */}
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Left Column - Timeline Navigation */}
+          {/* Left Column - Navigation */}
           <div className="lg:w-2/5">
             <div className="bg-white/5 rounded-xl p-6 border border-white/10">
               <h3 className="text-lg font-semibold text-white mb-4">Certifications</h3>
@@ -79,9 +77,6 @@ const Education = () => {
                         <h4 className="font-medium text-white text-sm mb-1 truncate">
                           {edu.school}
                         </h4>
-                        <p className="text-gray-400 text-xs">
-                          {edu.date}
-                        </p>
                       </div>
                     </div>
                   </button>
@@ -109,7 +104,7 @@ const Education = () => {
             </div>
           </div>
 
-          {/* Right Column - Active Certification Details */}
+          {/* Right Column - Details */}
           <div className="lg:w-3/5">
             <div className={`transition-all duration-500 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -124,7 +119,7 @@ const Education = () => {
                   }`}
                 >
                   <div className="bg-white/5 rounded-xl border border-white/10 overflow-hidden">
-                    {/* Certificate Header */}
+                    {/* Header */}
                     <div className="bg-white/10 p-6 border-b border-white/10">
                       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                         <div className="flex items-center space-x-4">
@@ -144,15 +139,10 @@ const Education = () => {
                             </p>
                           </div>
                         </div>
-                        <div className="bg-green-500/20 px-8 py-4 rounded-full">
-                          <span className="text-green-400 text-sm font-medium">
-                            {edu.date}
-                          </span>
-                        </div>
                       </div>
                     </div>
 
-                    {/* Certificate Body */}
+                    {/* Body */}
                     <div className="p-6">
                       {/* Grade and Details */}
                       <div className="flex flex-wrap gap-4 mb-6">
@@ -185,7 +175,7 @@ const Education = () => {
                         </p>
                       </div>
 
-                      {/* Skills Gained */}
+                      {/* Skills */}
                       <div className="mb-6">
                         <h4 className="text-white font-semibold mb-3 text-sm">Key Competencies</h4>
                         <div className="flex flex-wrap gap-2">
@@ -200,9 +190,23 @@ const Education = () => {
                         </div>
                       </div>
 
-                      {/* CTA Button */}
+                      {/* Certificate Image - Show directly if certImg exists */}
+                      {edu.certImg && (
+                        <div className="mb-6">
+                          <h4 className="text-white font-semibold mb-3 text-sm">Certificate</h4>
+                          <div className="bg-white/5 rounded-lg p-4 border border-white/10">
+                            <img
+                              src={edu.certImg}
+                              alt="Certificate"
+                              className="w-full h-auto rounded-lg"
+                            />
+                          </div>
+                        </div>
+                      )}
+
+                      {/* CTA Button - Only show for external links, not for images */}
                       <div className="flex flex-col sm:flex-row gap-3">
-                        {edu.certLink && (
+                        {edu.certLink && !edu.certImg && (
                           <a
                             href={edu.certLink}
                             target="_blank"
@@ -212,7 +216,6 @@ const Education = () => {
                             View Certificate
                           </a>
                         )}
-                       
                       </div>
                     </div>
                   </div>

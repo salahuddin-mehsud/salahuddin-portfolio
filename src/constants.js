@@ -4,22 +4,18 @@ import cssLogo from './assets/tech_logo/css.png';
 import sassLogo from './assets/tech_logo/sass.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
-import angularLogo from './assets/tech_logo/angular.png';
 import reduxLogo from './assets/tech_logo/redux.png';
 import nextjsLogo from './assets/tech_logo/nextjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import gsapLogo from './assets/tech_logo/gsap.png';
 import materialuiLogo from './assets/tech_logo/materialui.png';
 import bootstrapLogo from './assets/tech_logo/bootstrap.png';
-import springbootLogo from './assets/tech_logo/springboot.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
 import firebaseLogo from './assets/tech_logo/firebase.png';
-import cLogo from './assets/tech_logo/c.png';
 import cppLogo from './assets/tech_logo/cpp.png';
-import javaLogo from './assets/tech_logo/java.png';
 import pythonLogo from './assets/tech_logo/python.png';
 import typescriptLogo from './assets/tech_logo/typescript.png';
 import gitLogo from './assets/tech_logo/git.png';
@@ -41,19 +37,9 @@ import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 // Education Section Logo's
 import glaLogo from './assets/education_logo/microsoft.png';
 import bsaLogo from './assets/education_logo/ibm.png';
-import vpsLogo from './assets/education_logo/vps_logo.png';
-
-// Project Section Logo's
-import githubdetLogo from './assets/work_logo/github_det.png';
-import csprepLogo from './assets/work_logo/cs_prep.png';
-import movierecLogo from './assets/work_logo/movie_rec.png';
-import taskremLogo from './assets/work_logo/task_rem.png';
-import npmLogo from './assets/work_logo/npm.png';
-import webverLogo from './assets/work_logo/web_dig.png';
-import cmLogo from './assets/work_logo/cm.png';
-import imagesearchLogo from './assets/work_logo/image_search.png';
-import removebgLogo from './assets/work_logo/remove_bg.png';
+import alchemy from './assets/education_logo/alchemy.png';
 import SocketLogo from './assets/tech_logo/socket_logo.png'
+import certImg from './assets/certificate.png'
 
 
 import gaslessVideo from './assets/project_videos/gasless_voting.mp4';
@@ -159,7 +145,6 @@ export const SkillsInfo = [
       id: 0,
       img: glaLogo,
       school: "Microsoft",
-      date: "September 7, 2025",
       grade: "99% / Duration 39 hr",
       desc: "Completed Microsoft Full-Stack course covering Computational Thinking, Algorithms, Programming Principles, C#, Back-End and Full-Stack Web Development, Git/GitHub version control, pseudocode, and program development, gaining hands-on experience in building complete web applications.",
       degree: "Foundations of Coding Full-Stack by Microsoft",
@@ -169,10 +154,17 @@ export const SkillsInfo = [
       id: 1,
       img: bsaLogo,
       school: "IBM",
-      date: "September 6, 2025",
       grade: "95% / Duration 9 hr",
       desc: "Completed IBM Introduction to DevOps course, learning DevOps practices including Scrum, CI/CD, Test-Driven Development, Cloud-Native Computing, Microservices, Performance Metrics, and cross-functional collaboration to drive team-oriented culture transformation",
       certLink: "https://coursera.org/share/b7424cd1af2b9ecf81efbddf2b5229d7",
+    },
+    {
+      id: 2,
+      img: alchemy,
+      school: "Alchemy University",
+      grade: "95% / Duration 15+ hr",
+      desc: "Alchemy EVM Chain Developer program, covering the fundamentals and advanced concepts of Ethereum Virtual Machine (EVM) development. Gained hands-on experience with smart contracts, Solidity programming, decentralized applications (dApps), blockchain architecture, gas optimization, and on-chain debugging using Alchemy tools. Demonstrated proficiency in building, testing, and deploying secure and scalable smart contracts on EVM-compatible networks.",
+      certImg: certImg
     },
   ];
   
