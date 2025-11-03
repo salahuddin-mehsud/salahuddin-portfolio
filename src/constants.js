@@ -239,7 +239,7 @@ Live notification system for all user activities
     tags: ["React JS", "Node.js", "Socket.io", "RESTfulAPI", "tailwindcss", "JavaScript"],
     github: "https://github.com/salahuddin-mehsud/Job-Portals",
     // Add video properties
-    videoUrl: jobPortalVideo,
+    
   },
   {
     id: 2,

@@ -212,7 +212,6 @@ const Education = () => {
                         </div>
                       )}
 
-                      {/* CTA Button - Only show for external links, not for images */}
                       <div className="flex flex-col sm:flex-row gap-3">
                         {edu.certLink && !edu.certImg && (
                           <a
